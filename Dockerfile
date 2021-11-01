@@ -1,5 +1,5 @@
-FROM python:3.5-stretch
+FROM python:3.7-stretch
 
 RUN apt-get update -y 
-RUN apt-get install -y gpac
+RUN apt-get install -y gpac libasound2-dev
 RUN pip install --upgrade pip
